@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>De ruta con Miguel - Venta de entradas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body class="body">
+  <div class="confirmation confirmation--hidden">
+    <p class="confirmation__title">Enhorabuena has comprado tus entradas</p>
+  </div>
+  <header class="header">
+    <img class="header__image" src="" alt="">
+    <div class="container">
+      <div class="header__content">
+        <h1 class="header__title"></h1>
+        <h2 class="header__subtitle"></h2>
+        <h3 class="header__description"></h3>
+      </div>
+    </div>
+  </header>
+  <main class="container">
+    <section class="event__details">
+      <div class="event__card event__card--location">
+        <p class="event__card__title">¿Dónde?</p>
+        <p class="event__card__description"></p>
+      </div>
+      <div class="event__card event__card--date">
+        <p class="event__card__title">¿Cuándo?</p>
+        <p class="event__card__description"></p>
+      </div>
+    </section>
+    <section class="form__wrapper">
+      <h4 class="form__title">¡No te quedes sin entradas!</h4>
+      <form class="form">
+        <div class="form__group">
+          <label for="fullname" class="form__label">Nombre completo</label>
+          <input type="text" id="fullname" name="fullname" class="form__input" required>
+        </div>
+        <div class="form__group">
+          <label for="email" class="form__label">Correo electrónico</label>
+          <input type="email" id="email" name="email" class="form__input form__input--email" required>
+        </div>
+        <div class="form__group">
+          <label for="confirm_email" class="form__label">Confirma tu correo electrónico</label>
+          <input type="email" id="confirm_email" name="confirm_email" class="form__input form__input--confirmation" required>
+        </div>
+        <div class="form__group">
+          <label for="number_of_tickets" class="form__label">Número de entradas</label>
+          <select id="number_of_tickets" name="number_of_tickets" class="form__input form__input--select-tickets" required>
+          </select>
+        </div>
+        <button type="submit" class="form__submit">Comprar entradas</button>
+      </form>
+    </section>
+  </main>
+  <script src="/main.js" defer></script>
+</body>
+</html>

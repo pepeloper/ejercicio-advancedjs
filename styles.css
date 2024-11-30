@@ -1,0 +1,169 @@
+:root {
+  --white: #F8F8F8;
+  --gray-50: #F5F5F5;
+  --gray-100: #E6E6E6;
+  --gray-200: #929292;
+  --black: #1F1D1D;
+  --orange-900: #392A1F;
+  --accent: #DF8F55;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  color: var(--black);
+  font-family: 'Inter';
+}
+
+.header {
+  height: 29rem;
+  position: relative;
+}
+
+.header__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  padding-bottom: 12px;
+  right: 0;
+  z-index: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1144px;
+  margin: 0 auto;
+}
+
+.header__content {
+  position: absolute;
+  bottom: 20px;
+  color: var(--white);
+}
+
+.header__title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.header__subtitle {
+  font-size: 1.125rem;
+  font-weight: bold;
+  margin-top: 0.375rem;
+}
+
+.header__description {
+  color: var(--gray-50);
+  font-size: 1.125rem;
+  margin-top: 1rem;
+}
+
+
+/* MAIN */
+.event__details {
+  margin-top: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.75rem;
+}
+
+.event__card {
+  padding: 16px 24px;
+  border: 1px solid var(--gray-100);
+  border-left: 4px solid var(--accent);
+  width: 400px;
+}
+
+.event__card__title {
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+.event__card__description {
+  font-size: 0.875rem;
+  margin-top: 0.75rem;
+}
+
+.form__wrapper {
+  margin-top: 3.375rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form__title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.form {
+  margin-top: 3rem;
+}
+
+.form__group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.form__label {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.form__input {
+  margin-top: 0.75rem;
+  padding: 14px 6px;
+  width: 400px;
+  border: 1px solid var(--gray-200);
+  border-radius: 6px;
+}
+
+.form__input--error > .form__label{
+  color: red;
+}
+
+.form__input--error > .form__input {
+  border: 1px solid red;
+}
+
+.form__submit {
+  background-color: var(--orange-900);
+  color: var(--white);
+  width: 100%;
+  padding: 16px 0;
+  border-radius: 6px;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.confirmation {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 50;
+  background: rgba(0, 0, 0, 0.9);
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.confirmation__title {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.confirmation--hidden {
+  display: none;
+}
